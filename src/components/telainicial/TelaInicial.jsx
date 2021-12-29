@@ -1,10 +1,13 @@
+import {
+    NavBarBK,
 
+} from './styles'
 
 export default function TelaInicial() {
-  return (
-    <div>
-        <h2>Olá</h2>
-    </div>
-  );
+    return (
+        <div>
+
+        </div>
+    );
 }
 
