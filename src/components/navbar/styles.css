@@ -1,0 +1,25 @@
+
+.HeartImg:hover{
+    opacity: 0.5;
+}
+.CartImg:hover{
+    opacity: 0.5;
+}
+.SearchImg{
+    opacity: 0.5;
+}
+.notif{
+    background-color: yellow;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 10px;
+    right: 27px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.notif p{
+    font-size: 12px;
+}
