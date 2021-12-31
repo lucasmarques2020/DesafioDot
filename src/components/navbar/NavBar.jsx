@@ -5,16 +5,17 @@ import {
     FormControl,
     InputGroup
 
+
 } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import SearchImg from '../../search.png'
-import CartImg from '../../cart.png'
-import HeartImg from '../../heart.png'
+import SearchImg from '../../assets/img/navbar/search.png'
+import CartImg from '../../assets/img/navbar/cart.png'
+import HeartImg from '../../assets/img/navbar/heart.png'
 
 export default function NavBar() {
     return (
         <>
-            <Container className='container' style={{ background: '#8dd7cf' }}>
+            <Container collapseOnSelect className='container' style={{ background: '#8dd7cf' }}>
                 <Navbar className='justify-content-md-center' expand="lg">
                     <Container>
                         <Navbar.Brand href="#"
@@ -31,25 +32,28 @@ export default function NavBar() {
                             aria-label="Recipient's username"
                             aria-describedby="basic-addon2"
                         />
-                         <Button variant="transparent"
-                         style={{
-                            height: '40px',
-                            widht: '40px',
-                            position: 'absolute',
-                            right: '20px',
-                            top: '0px'
-                        }}>
-                        <img src={SearchImg}
-                             style={{
-                                height: '20px',
-                                widht: '20px',
-                            }}/>
-                            </Button>
+                        <Button variant="transparent"
+                            style={{
+                                height: '40px',
+                                widht: '40px',
+                                position: 'absolute',
+                                right: '20px',
+                                top: '0px'
+                            }}>
+                            <img src={SearchImg}
+                                style={{
+                                    height: '20px',
+                                    widht: '20px',
+                                }} />
+                        </Button>
                     </InputGroup>
                     <Container className="d-flex flex-wrap justify-content-end">
-                        <Navbar.Brand href="#"><img src={HeartImg} style={{widht: '20px', height: '20px'}}/></Navbar.Brand>
-                        <Navbar.Brand href="#"><img src={CartImg} style={{widht: '20px', height: '20px', marginLeft: '10px'}}/></Navbar.Brand>
-                    </Container>
+                        <Navbar.Toggle aria-controls="navbarScroll" />
+                        <Navbar.Collapse className=" justify-content-end" id="navbarScroll">
+                                <Navbar.Brand href="#"><img src={HeartImg} style={{ widht: '20px', height: '20px' }} /></Navbar.Brand>
+                                <Navbar.Brand href="#"><img src={CartImg} style={{ widht: '20px', height: '20px', marginLeft: '10px' }} /></Navbar.Brand>
+                        </Navbar.Collapse>
+                    </Container>    
                 </Navbar>
             </Container>
         </>
