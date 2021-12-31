@@ -3,7 +3,7 @@ import {
     Navbar,
     Container,
     FormControl,
-    InputGroup
+    InputGroup,
 } from 'react-bootstrap'
 import './styles.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -14,7 +14,7 @@ import HeartImg from '../../assets/img/navbar/heart.png'
 export default function NavBar() {
     return (
         <>
-            <Container collapseOnSelect className='container' style={{ background: '#8dd7cf' }}>
+            <Container className='container' style={{ background: '#8dd7cf' }}>
                 <Navbar className='justify-content-md-center' expand="lg">
                     <Container>
                         <Navbar.Brand href="#"
@@ -49,11 +49,15 @@ export default function NavBar() {
                     <Container className="d-flex flex-wrap justify-content-end">
                         <Navbar.Toggle aria-controls="navbarScroll" />
                         <Navbar.Collapse className=" justify-content-end" id="navbarScroll">
-                                <Navbar.Brand href="#"><img className='HeartImg'src={HeartImg} style={{ widht: '20px', height: '20px' }} /></Navbar.Brand>
-                                <div className='notif'><p>2</p></div>
-                                <Navbar.Brand href="#"><img className='CartImg'src={CartImg} style={{ widht: '20px', height: '20px', marginLeft: '10px' }} /></Navbar.Brand>
+                            <Button variant="transparent">
+                                <Navbar.Brand href="#"><img className='HeartImg' src={HeartImg} style={{ widht: '20px', height: '20px' }} /></Navbar.Brand>
+                            </Button>
+                            <Button variant="transparent">
+                                <Navbar.Brand href="#"><img className='CartImg' src={CartImg} style={{ widht: '20px', height: '20px', marginLeft: '10px' }} /><div className='Notif
+Notif'><p>2</p></div></Navbar.Brand>
+                            </Button>
                         </Navbar.Collapse>
-                    </Container>    
+                    </Container>
                 </Navbar>
             </Container>
         </>
