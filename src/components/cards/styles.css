@@ -1,0 +1,28 @@
+.Cards{
+   border-radius: 5px;
+   width: 15rem;
+   text-align: center;
+   padding: 0px;
+   margin: 10px;
+   overflow: hidden;
+   box-shadow: 0px 0px 20px rgba(0,0,0, 0.1);
+}
+.CardsImg{
+    transition: 0.4s;
+}
+.CardsImg:hover{
+    transform: scale(1.05);
+}
+
+.CardsBody{
+    margin: 0px;
+    margin-top: 10px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+
+}
+.ButtonAdc{
+    background-color: rgb(101, 88, 245);
+    width: 100%;
+}
