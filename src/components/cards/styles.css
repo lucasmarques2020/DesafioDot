@@ -29,8 +29,40 @@
 .ButtonAdc{
     background-color: rgb(101, 88, 245);
     width: 100%;
+    transition: 0.5s;
 }
 .ButtonAdc:hover{
     background-color: rgb(65, 49, 250);
     width: 100%;
+}
+.CardsImgStar{
+    width: 25px;
+    
+}
+.CardsBodyInformation{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.InformationDate{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0,0,0, 0.5);
+    position: absolute;
+    bottom: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+.InformationDate:hover{
+    background-color: black;
+    transform: scale(1.1);
+}
+.CardsTextDate{
+    color: white;
+    font-weight: bold;
 }

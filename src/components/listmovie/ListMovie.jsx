@@ -9,7 +9,7 @@ export default function ListMovie() {
         baseURL: 'https://api.themoviedb.org/3'
     })
     const [popularMovies, setPopularMovies] = useState([])
-    useEffect(async() => {
+    useEffect(async () => {
         const [popularData] = await Promise.all([
             api.get('/movie/popular', {
                 params: {
@@ -19,13 +19,20 @@ export default function ListMovie() {
                 }
             }),
         ])
-        const popularList = ( popularData.data.results)
+        const popularList = (popularData.data.results)
         setPopularMovies(popularList)
         console.log(popularMovies)
     })
     return (
         <>
-            {popularMovies.map(p => (<Cards title={p.title} image={p.poster_path} />))
+            {popularMovies.map(p => (<Cards
+                title={p.title}
+                image={p.poster_path}
+                value={'R$ 77.99'} 
+                gener={'Gênero'}
+                vote={p.vote_average}
+                date={p.release_date}
+                />))
             }
 
         </>
