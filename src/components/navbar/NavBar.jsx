@@ -8,25 +8,17 @@ import {
 import './styles.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import SearchImg from '../../assets/img/navbar/search.png'
-import CartImg from '../../assets/img/navbar/cart.png'
-import HeartImg from '../../assets/img/navbar/heart.png'
-
+import LittleCart from '../littlecart/LittleCart'
+import Like from '../like/Like'
 export default function NavBar() {
     return (
-        <>
-            <Container className='container' style={{ background: '#8dd7cf' }}>
+            <Container className='container'>
                 <Navbar className='justify-content-md-center' expand="lg">
                     <Container>
-                        <Navbar.Brand href="#"
-                            style={{
-                                fontSize: '20px',
-                                fontWeight: 'bold',
-                                color: 'white'
-                            }}>LOGO</Navbar.Brand>
+                        <Navbar.Brand className='NavBrand' href="#">LOGO</Navbar.Brand>
                     </Container>
                     <InputGroup className='SearchProducts'>
-                        <FormControl
-                            style={{ borderRadius: '5px', marginRight: '10px', height: '40px' }}
+                        <FormControl className='FormControls'
                             placeholder="Pesquisa"
                             aria-label="Recipient's username"
                             aria-describedby="basic-addon2"
@@ -36,7 +28,7 @@ export default function NavBar() {
                                 height: '40px',
                                 widht: '40px',
                                 position: 'absolute',
-                                right: '20px',
+                                right: '10px',
                                 top: '0px'
                             }}>
                             <img src={SearchImg}
@@ -47,20 +39,16 @@ export default function NavBar() {
                         </Button>
                     </InputGroup>
                     <Container className="d-flex flex-wrap justify-content-end">
-                        <Navbar.Toggle aria-controls="navbarScroll" />
-                        <Navbar.Collapse className=" justify-content-end" id="navbarScroll">
-                            <Button variant="transparent">
-                                <Navbar.Brand href="#"><img className='HeartImg' src={HeartImg} style={{ widht: '20px', height: '20px' }} /></Navbar.Brand>
-                            </Button>
-                            <Button variant="transparent">
-                                <Navbar.Brand href="#"><img className='CartImg' src={CartImg} style={{ widht: '20px', height: '20px', marginLeft: '10px' }} /><div className='Notif
-Notif'><p>2</p></div></Navbar.Brand>
-                            </Button>
+                        <Navbar.Toggle className='Toggle row'/>
+                        <Navbar.Collapse className=" container justify-content-end" id="navbarScroll">
+                            <div className='justify-content-start row'>
+                            <Like />
+                            <LittleCart />
+                            </div>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
             </Container>
-        </>
     )
 }
 

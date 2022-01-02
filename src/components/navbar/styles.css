@@ -1,24 +1,28 @@
-
-.HeartImg:hover{
-    opacity: 0.5;
+.container{
+    background: #8dd7cf;
 }
-.CartImg:hover{
+.NavBrand{
+    font-size: 20px;
+    font-weight: bold;
+    color: white !important;
+}
+.FormControls{
+    border-radius: 5px;
+    margin-right: 10px;
+    height: 40px;
+}
+.HeartImg:hover{
     opacity: 0.5;
 }
 .SearchImg{
     opacity: 0.5;
 }
-.Notif{
-    background-color: yellow;
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    position: absolute;
-    bottom: 30px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.Toggle{
+    border: none !important;
+    outline: none !important;
+    list-style: none !important;
+    box-shadow: none !important;
+    background-color: white;
+    margin-top: 5px;
 }
-.Notif p{
-    font-size: 13px;
-}
+

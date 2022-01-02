@@ -52,7 +52,7 @@
     height: 50px;
     background-color: rgba(0,0,0, 0.5);
     position: absolute;
-    bottom: 40%;
+    top: 300px;
     display: flex;
     justify-content: center;
     align-items: center;

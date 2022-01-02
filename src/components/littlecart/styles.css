@@ -1,0 +1,57 @@
+.Notif{
+    background-color: yellow;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.Notif p{
+    font-size: 13px;
+}
+.CartImg:hover{
+    opacity: 0.5;
+}
+
+.BodyItemsCart{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 50px;
+}
+.ButtonAdcF{
+    color: white;
+    background-color: rgb(101, 88, 245);
+    width: 100%;
+    padding: 10px;
+    transition: 0.5s;
+}
+.ButtonAdcF:hover{
+    background-color: rgb(65, 49, 250);
+    width: 100%;
+}
+.FinishBuy{
+    padding: 20px;
+}
+.navCart{
+    width: 50px;
+    height: 50px;
+
+}
+.ToggleCart{
+    width: 40px;
+    height: 40px;
+}
+.ToggleCart{
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none !important;
+
+}
