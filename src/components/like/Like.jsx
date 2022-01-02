@@ -27,7 +27,7 @@ export default function Like() {
                         placement="end"
                     >
                         <Offcanvas.Header closeButton>
-                            <Offcanvas.Title id="offcanvasNavbarLabel">Meu Favoritos</Offcanvas.Title>
+                            <Offcanvas.Title id="offcanvasNavbarLabel">Meus Favoritos</Offcanvas.Title>
                             <Nav.Link href="#action1">Esvaziar</Nav.Link>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
