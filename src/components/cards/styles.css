@@ -22,7 +22,15 @@
     align-items: center;
 
 }
+.CardsTitle{
+    height: 80px;
+    overflow:hidden;
+}
 .ButtonAdc{
     background-color: rgb(101, 88, 245);
+    width: 100%;
+}
+.ButtonAdc:hover{
+    background-color: rgb(65, 49, 250);
     width: 100%;
 }

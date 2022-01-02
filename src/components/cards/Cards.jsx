@@ -3,18 +3,17 @@ import {
     Card
 } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Filme from '../../assets/img/cards/filme.png'
 import './styles.css'
 
-export default function Cards() {
+export default function Cards(props) {
     return (
         <>
             <Card className='Cards'>
-                <Card.Img className='CardsImg'variant="top" src={Filme} />
+                <Card.Img className='CardsImg'variant="top" src={'https://image.tmdb.org/t/p/w500/'+props.image} />
                 <Card.Body className='CardsBody'>
-                    <Card.Title>Nome do Filme</Card.Title>
-                    <Card.Text>Genero</Card.Text>
-                    <Card.Text>R$ 77,99</Card.Text>
+                    <Card.Title className='CardsTitle'>{props.title}</Card.Title>
+                    <Card.Text>{props.genero}</Card.Text>
+                    <Card.Text>{props.value}</Card.Text>
                     <Button className='ButtonAdc'>Adicionar</Button>
                 </Card.Body>
             </Card>
