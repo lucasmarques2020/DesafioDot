@@ -10,12 +10,15 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import SearchImg from '../../assets/img/navbar/search.png'
 import LittleCart from '../littlecart/LittleCart'
 import Like from '../like/Like'
+
 export default function NavBar() {
+
     return (
             <Container className='container'>
                 <Navbar className='justify-content-md-center' expand="lg">
                     <Container>
-                        <Navbar.Brand className='NavBrand' href="#">LOGO</Navbar.Brand>
+                        
+                        <Navbar.Brand className='NavBrand' href="/">LOGO</Navbar.Brand>
                     </Container>
                     <InputGroup className='SearchProducts'>
                         <FormControl className='FormControls'

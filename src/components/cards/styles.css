@@ -28,6 +28,8 @@
     background-color: rgb(101, 88, 245);
     width: 100%;
     transition: 0.5s;
+    color: white;
+    font-weight: bold;
 }
 .ButtonAdc:hover{
     background-color: rgb(65, 49, 250);

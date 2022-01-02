@@ -50,7 +50,7 @@ export default function LittleCart() {
                             <h2 className='col'>Total:</h2>
                             <h2 className='col'>R$: 19,98</h2>
                         </div>
-                        <button className='ButtonAdcF'>Finalizar compra</button>
+                       <a href="/finish"><button className='ButtonAdcF'>Finalizar compra</button></a> 
                     </Navbar.Offcanvas>
                     </Container>
                 </Navbar>

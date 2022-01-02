@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import NavBar from './components/navbar/NavBar'
-import ListMovie from './components/listmovie/ListMovie'
-
+import Routs from './route/Route'
 export default function App() {
   return (
     <>
@@ -9,7 +8,7 @@ export default function App() {
         <div className='row'>
           <NavBar />
           <div className='d-flex flex-wrap justify-content-center p-5'>
-            <ListMovie />
+            <Routs/>
           </div>
         </div>
       </div>

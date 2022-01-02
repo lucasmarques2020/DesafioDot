@@ -1,0 +1,27 @@
+.ButtonAdcBuy{
+    padding: 10px;
+    color: white;
+    background-color: rgb(101, 88, 245);
+    width: 100%;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.ButtonAdcBuy:hover{
+    background-color: rgb(65, 49, 250);
+    width: 100%;
+}
+.ContaineFinish{
+    background: transparent;
+}
+.Inputs{
+    padding: 15px;
+}
+.Menu{
+    color: black !important;
+    outline: none;
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 20px;
+}

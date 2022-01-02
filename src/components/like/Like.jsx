@@ -37,7 +37,7 @@ export default function Like() {
                                 <Nav.Link className='col mt-1' href="#">1</Nav.Link>
                                 <Nav.Link className='col mt-1' href="#">R$ 9,99</Nav.Link>
                                 <Nav.Link className='col-1' href="#"><img src={TrashImg} style={{ width: 20, height: 20 }} /></Nav.Link>
-                                <Nav.Link className='col-1' href="#"><img src={CartImg} style={{ width: 20, height: 20 }} /></Nav.Link>
+                                <Nav.Link className='col-1' href="/finish"><img src={CartImg} style={{ width: 20, height: 20 }} /></Nav.Link>
                             </Nav>
                             <Nav className="BodyItemsCart">
                                 <Nav.Link className='col-2' style={{ width: 20, height: 20, backgroundColor: 'grey' }} href="#"></Nav.Link>
@@ -45,7 +45,7 @@ export default function Like() {
                                 <Nav.Link className='col mt-1' href="#">1</Nav.Link>
                                 <Nav.Link className='col mt-1' href="#">R$ 9,99</Nav.Link>
                                 <Nav.Link className='col-1' href="#"><img src={TrashImg} style={{ width: 20, height: 20 }} /></Nav.Link>
-                                <Nav.Link className='col-1' href="#"><img src={CartImg} style={{ width: 20, height: 20 }} /></Nav.Link>
+                                <Nav.Link className='col-1' href="/finish"><img src={CartImg} style={{ width: 20, height: 20 }} /></Nav.Link>
                             </Nav>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>
